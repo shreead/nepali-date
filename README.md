@@ -66,12 +66,12 @@ Display on [Homepage](https://gethomepage.dev) dashboard using their [custom API
     - Nepali Date:
         container: nepali-date
         icon: mdi-calendar-month
-        server: server-name # defined in docker.yaml file
+        server: server-name   # defined in docker.yaml file
         showStats: false
         widget:
           type: customapi
           url: 'http://IP:5000/date'
-          refreshInterval: 50000
+          refreshInterval: 60000   # milliseconds = 1min
           method: GET
           mappings:
             - field: nepali_date
