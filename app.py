@@ -5,9 +5,9 @@ app = Flask(__name__)
 
 @app.route('/date', methods=['GET'])
 def get_nepali_date():
-    today = nepalidate.today()
+    nepali_date_today = nepalidate.today()
     return jsonify({
-        "nepali_date": str(today)
+        "nepali_date": nepali_date_today.strftime_ne("%Y-%B-%d")
     })
 
 if __name__ == "__main__":
