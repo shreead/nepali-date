@@ -4,10 +4,11 @@ from nepali.datetime import nepalidate
 app = Flask(__name__)
 
 @app.route('/date', methods=['GET'])
-def get_nepali_date():
-    nepali_date_today = nepalidate.today()
+def get_date():
+    nepdate = nepalidate.today()
     return jsonify({
-        "nepali_date": nepali_date_today.strftime_ne("%Y-%B-%d")
+        "date_en": str(nepdate),  # return 2082-01-02
+        "date_ne": nepdate.strftime_ne("%Y-%B-%d")  # return २०८२-बैशाख-०२
     })
 
 if __name__ == "__main__":
