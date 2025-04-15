@@ -17,6 +17,8 @@ RUN pip install flask gunicorn nepali
 # Add our python script
 COPY app.py .
 
+ADD VERSION .
+
 EXPOSE 5000
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
