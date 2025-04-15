@@ -13,3 +13,7 @@ The API is containerized using Docker and served via Gunicorn for production rea
 - Production-ready with Gunicorn WSGI server
 - Healthcheck endpoint for container monitoring
 
+---
+
+## Credits
+[py-nepali](https://github.com/opensource-nepal/py-nepali) by [opensource-nepal](https://github.com/opensource-nepal)
