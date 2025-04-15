@@ -1,3 +1,12 @@
 #!/bin/bash
-docker tag nepali-date ghcr.io/shreead/nepali-date:latest
-docker push ghcr.io/shreead/nepali-date:latest
+
+# read version
+version=`cat VERSION`
+echo "version: $version"
+
+# tag
+docker tag nepali-date:latest ghcr.io/shreead/nepali-date:$version
+
+# push
+docker push ghcr.io/shreead/nepali-date:atest
+docker push ghcr.io/shreead/nepali-date:$version
