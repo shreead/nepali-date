@@ -29,11 +29,11 @@ The API is containerized using Docker and served via Gunicorn for production rea
 
 ### Build the image locally
 ```
-docker build -t nepali-date-api .
+docker build -t nepali-date .
 ```
 ### Run the container
 ```
-docker run -p 5000:5000 nepali-date-api
+docker run -p 5000:5000 nepali-date
 ```
 Visit: http://IP:5000/date
 
