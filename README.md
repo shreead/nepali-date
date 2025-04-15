@@ -1,4 +1,4 @@
-# 🇳🇵 Nepali Date API (Dockerized)
+# 🇳🇵 Nepali Date
 
 A minimal Flask API that returns today's Nepali date (`बिक्रम संवत`) using the [py-nepali](https://github.com/opensource-nepal/py-nepali) library.
 
